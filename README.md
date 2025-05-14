@@ -31,7 +31,7 @@ Model diuji sebelum dan sesudah penghapusan outlier untuk melihat pengaruhnya te
 
 ### 📦 Dataset
 
-Dataset yang digunakan adalah **Boston Housing Dataset** dari UCI Machine Learning Repository. Setiap baris data merepresentasikan satu kota atau desa di sekitar Boston, dengan berbagai atribut seperti:
+Dataset yang digunakan adalah **Boston Housing Dataset** dari Kaggle (https://www.kaggle.com/datasets/vikrishnan/boston-house-prices/data). Setiap baris data merepresentasikan satu kota atau desa di sekitar Boston, dengan berbagai atribut seperti:
 - CRIM: Tingkat kejahatan per kapita
 - RM: Jumlah rata-rata kamar
 - TAX: Tingkat pajak properti
