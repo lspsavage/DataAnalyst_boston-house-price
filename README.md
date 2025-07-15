@@ -10,10 +10,10 @@ Melalui proyek analisis data ini, dilakukan eksplorasi dan visualisasi terhadap 
 
 ### 🎯 Research Question
 
-1. Faktor apa saja yang paling berpengaruh terhadap harga rumah di Boston?  
-2. Apakah tingkat kejahatan (CRIM) berpengaruh negatif terhadap harga rumah?  
-3. Apakah rasio murid-guru (PTRATIO) berkorelasi dengan harga rumah?  
-4. Apakah kedekatan dengan Sungai Charles (CHAS) berdampak signifikan terhadap harga rumah?  
+1. Faktor apa saja yang paling berpengaruh terhadap harga rumah di Boston?
+2. Apakah tingkat kejahatan (CRIM) berpengaruh negatif terhadap harga rumah?
+3. Apakah rasio murid-guru (PTRATIO) berkorelasi dengan harga rumah?
+4. Apakah kedekatan dengan Sungai Charles (CHAS) berdampak signifikan terhadap harga rumah?
 5. Apakah rumah di area dengan pajak tinggi (TAX) memiliki harga jual lebih rendah?
 
 ---
@@ -21,6 +21,7 @@ Melalui proyek analisis data ini, dilakukan eksplorasi dan visualisasi terhadap 
 ### 📈 Model Prediksi
 
 Selain analisis eksploratif, proyek ini juga menggunakan **Linear Regression** untuk memprediksi harga rumah. Model ini diuji menggunakan metrik evaluasi seperti:
+
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
 - R² Score
@@ -32,6 +33,7 @@ Model diuji sebelum dan sesudah penghapusan outlier untuk melihat pengaruhnya te
 ### 📦 Dataset
 
 Dataset yang digunakan adalah **Boston Housing Dataset** dari Kaggle (https://www.kaggle.com/datasets/vikrishnan/boston-house-prices/data). Setiap baris data merepresentasikan satu kota atau desa di sekitar Boston, dengan berbagai atribut seperti:
+
 - CRIM: Tingkat kejahatan per kapita
 - RM: Jumlah rata-rata kamar
 - TAX: Tingkat pajak properti
@@ -50,9 +52,34 @@ Dataset yang digunakan adalah **Boston Housing Dataset** dari Kaggle (https://ww
 
 ---
 
+### 📊 Power BI Dashboard
+
+Selain menggunakan Python untuk analisis dan modeling, proyek ini juga dilengkapi dengan **dashboard interaktif menggunakan Power BI**. Dashboard ini bertujuan untuk memberikan insight visual yang lebih mudah dipahami oleh pengguna non-teknis atau stakeholder.
+
+#### 🎯 Fitur Utama Dashboard:
+
+- Visualisasi hubungan antara harga rumah dengan variabel seperti `RM`, `CRIM`, `PTRATIO`, dan `TAX`.
+- Filter interaktif berdasarkan kedekatan ke Sungai Charles (CHAS).
+- Rangkuman statistik utama dan outlier.
+- Heatmap korelasi antar variabel.
+
+#### 🖼️ Cuplikan Dashboard:
+
+![Power BI Dashboard](image/dashboard.png)
+
+#### 🔗 Cara Mengakses Dashboard:
+
+1. Buka Power BI Desktop (gratis dari Microsoft).
+2. Buka file `dashboard_boston_housing.pbix`.
+3. Pastikan file `cleaned_data.csv` ada di folder `data/` jika ada koneksi data.
+4. Kamu bisa mengganti sumber data (jika perlu) dengan klik kanan pada tabel > "Edit Queries".
+
+---
+
 ### 📊 Hasil Akhir
 
 Hasil akhir menunjukkan bahwa:
+
 - Harga rumah di Boston paling dipengaruhi oleh jumlah rata-rata kamar, diikuti oleh tingkat kejahatan dan rasio murid-guru. Semakin tinggi kejahatan, semakin rendah harga rumah. Rumah dekat sungai cenderung lebih mahal dan bervariasi, meskipun ada pengecualian pada rumah jauh dari sungai. Analisis juga menunjukkan bahwa rumah di area dengan pajak tinggi memiliki harga jual lebih rendah.
 - Penghapusan outlier meningkatkan akurasi model secara signifikan: error menjadi lebih kecil dan model lebih baik dalam menjelaskan variasi harga. Hal ini membuktikan bahwa pembersihan data penting untuk performa model prediksi harga rumah.
 
